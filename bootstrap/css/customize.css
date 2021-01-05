@@ -1,0 +1,17 @@
+.content{
+	background-color: #f0f0f0;
+}
+form {
+    -webkit-box-shadow: 6px 10px 40px 0px rgba(143,130,143,1);
+    -moz-box-shadow: 6px 10px 40px 0px rgba(143,130,143,1);
+    box-shadow: 6px 10px 40px 0px rgba(143,130,143,1);
+    padding: 1em;
+    background-color: #f1f1f1;
+}
+table {
+    -webkit-box-shadow: 6px 10px 40px 0px rgba(143,130,143,1);
+    -moz-box-shadow: 6px 10px 40px 0px rgba(143,130,143,1);
+    box-shadow: 6px 10px 40px 0px rgba(143,130,143,1);
+    padding: 1em;
+    background-color: #f1f1f1;
+}
