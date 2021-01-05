@@ -4,9 +4,7 @@ require_once ("../config/db.php");
 require_once ("../config/conexion.php");
 
 //Capturo el ID enviado desde el formulario
-$id= $_GET['id'];
-
-//Capturo los datos enviados en el formulario
+$id= $_POST['id'];
 $nombrecapturado = $_POST['nombre'];
 $apellidocapturado = $_POST['apellido'];
 $emailcapturado = $_POST['email'];
