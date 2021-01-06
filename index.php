@@ -10,7 +10,7 @@
 	
 	<!-- Integracion Hoja de estilos CSS -->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/customize.css">	
-	<
+	
 	<!-- Integracion Bootstrapp -->
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/Bootstrap.min.css">
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>

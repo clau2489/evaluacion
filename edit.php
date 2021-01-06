@@ -42,7 +42,7 @@
 				//Ciclo While que ejecuta una fila por cada registro encontrado 
 				while($rw=mysqli_fetch_array($consulta_sql)) {  
 					?>  
-					<form action="actions/update.php" method="post">
+					<form action="actions/update.php?id=<?php echo $rw['id']; ?>" method="post">
 						<div class="row">
 							<div class="col-md-12">
 								<h1>Editar Cliente</h1>			
@@ -50,7 +50,6 @@
 						</div>
 						<br>
 						<h6>Por favor complete todos los campos</h6>
-						<input type="hidden" id="id" name="id" value="<?php echo $rw['nombre']; ?>">
 						<div class="form-group mt-2">
 							<label>Nombre *</label>
 							<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required value="<?php echo $rw['nombre']; ?>">

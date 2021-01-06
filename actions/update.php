@@ -1,10 +1,13 @@
 <?php
+ob_start();
 //Conexion a la base de datos
 require_once ("../config/db.php");
 require_once ("../config/conexion.php");
 
 //Capturo el ID enviado desde el formulario
-$id= $_POST['id'];
+$id= $_GET['id'];
+
+//Capturo el resto de los datos del formulario
 $nombrecapturado = $_POST['nombre'];
 $apellidocapturado = $_POST['apellido'];
 $emailcapturado = $_POST['email'];
@@ -18,6 +21,9 @@ $sql = "UPDATE cliente SET nombre='$nombrecapturado', apellido='$apellidocaptura
 if ($conexion->query($sql) === TRUE) {
   	header("Location:../msj/success.php");
 } else {
-  	header("Location:../msj/error.php");
+	echo "Error: " . $sql . "<br>" . $conn->error; //Redireccion de la página
+  	//header("Location:../msj/error.php");
 }
+$conexion->close();
+ob_end_flush();
 ?>
